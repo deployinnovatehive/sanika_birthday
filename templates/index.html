@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Sanika</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='img/style.css') }}">
+</head>
+<body>
+    <div class="countdown" id="countdown">
+        <h1>Something for you</h1>
+        <div class="timer" id="timer"></div>
+        <div class="from">From Vaibhav</div>
+    </div>
+
+    <div class="container" id="main-container" style="display: none;">
+        <audio id="bg-music" preload="auto" loop>
+            <source src="{{ url_for('static', filename='img/mrig-naini.mp3') }}" type="audio/mpeg">
+            <!-- Placeholder for music file -->
+        </audio>
+
+        <div class="title">
+            <h1>Happy Birthday Sanika 💛</h1>
+            <p>16th January 🎂</p>
+        </div>
+
+        <img src="{{ url_for('static', filename='img/sanika3.JPG') }}" alt="Sanika" class="sanika-img">
+
+        <div id="lyrics-container">
+            <p id="lyric-line" class="lyric"></p>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="sparkles"></div>
+
+        <div class="ending-overlay" id="ending-overlay">
+            <div class="ending-text">Happy Birthday Sanika 💛</div>
+            <div class="ending-date">16th January 🎂</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='img/script.js') }}"></script>
+</body>
+</html>
